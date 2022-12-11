@@ -4,7 +4,7 @@ const router = express.Router();
 const Product = require("../models/productModels");
 const { default: mongoose } = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
-const auth = require("../modules/auth");
+const auth = require("../Modules/auth");
 
 
 router.post("/createProduct", auth.authenticateUser, async function (req, res) {

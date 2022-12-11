@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 const randomString = require("randomstring");
 const { default: mongoose } = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
-const auth = require("../modules/auth");
+const auth = require("../Modules/auth");
 
 
 
@@ -56,7 +56,7 @@ var transporter = nodemailer.createTransport({
       pass:  process.env.PASSWORD,
     },
   });
-  let link = "http://localhost:3000/activateEmail"
+  let link = "https://bookkeeping22.netlify.app/activateEmail"
         var mailOptions = {
           from: process.env.FROM,
           to: email,
@@ -181,7 +181,7 @@ router.post("/resetpassword", async function (req, res) {
       if (check) {
         let mailid = req.body.email;
         let rString = randomString.generate(12);
-        let link = `http://localhost:3000/resetpass/${check._id}`;
+        let link = `https://bookkeeping22.netlify.app/resetpass/${check._id}`;
         // await Register.updateOne({email: req.body.email},{$set: {isActive: "Active"}});
 
         let response = await Register.updateOne({email: req.body.email},{$set: {randomString: rString }});

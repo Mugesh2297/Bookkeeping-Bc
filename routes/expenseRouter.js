@@ -4,7 +4,7 @@ const router = express.Router();
 const Expense = require("../models/expenseModels");
 const { default: mongoose } = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
-const auth = require("../modules/auth");
+const auth = require("../Modules/auth");
 
 
 router.post("/createexpense", auth.authenticateUser, async function (req, res) {
