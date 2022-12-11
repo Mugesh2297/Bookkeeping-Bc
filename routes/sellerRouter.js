@@ -1,7 +1,7 @@
 const express = require("express");
 require("../db/connect");
 const router = express.Router();
-const Seller = require("../models/sellerModels.js");
+const Seller = require("../models/SellerModels");
 const { default: mongoose } = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
 const auth = require("../Modules/auth");
