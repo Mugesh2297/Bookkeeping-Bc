@@ -5,7 +5,7 @@ const URL = require("../models/urlModels");
 const randomstring = require("randomstring");
 const { default: mongoose } = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
-const auth = require("../modules/auth");
+const auth = require("../Modules/auth");
 
 
 
