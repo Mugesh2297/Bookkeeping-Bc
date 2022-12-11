@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 const randomString = require("randomstring");
 const { default: mongoose } = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
-const auth = require("../modules/auth");
+const auth = require("../Modules/auth");
 
 
 
