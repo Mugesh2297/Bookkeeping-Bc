@@ -20,7 +20,7 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({origin:'https://bookkeeping22.netlify.app'}));
 
 app.get("/",(req,res)=>{
     res.send("Hello World");
