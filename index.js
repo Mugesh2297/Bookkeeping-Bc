@@ -1,11 +1,8 @@
 const dotenv = require("dotenv");
 const express = require("express");
-const employeeRoutes = require("./routes/employeesRoutes");
 const registerRouter = require("./routes/registerRouter");
-const urlRouter = require("./routes/urlRouter");
 const auth = require("./Modules/auth");
 const productRouter = require("./routes/productRouter");
-const invoiceRouter = require("./routes/invoiceRouter");
 const expenseRouter = require("./routes/expenseRouter");
 const sellerRouter = require ("./routes/sellerRouter");
 const customerRouter = require ("./routes/customerRouter");
